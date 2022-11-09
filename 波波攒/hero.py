@@ -24,7 +24,7 @@ class Hero:
 
     def choose_random_skill_with_weights(self):
         if (self.skill_weights == None):
-            return self.choose_random_skill
+            return self.choose_random_skill()
         valid_skills = self.get_valid_skills()
         weights = []
         for s in valid_skills:
